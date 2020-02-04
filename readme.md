@@ -13,3 +13,6 @@ We can use this project as the foundation for our capstone. We will build off of
   * Angular	 
 * For production
   * Azure account
+
+## /ClientApp
+We are used to working on an Angular app that is based on the root level. In this project, because its both client and server, the Angular things are in the ClientApp folder. In this folder is the same folder structure we are used to from using ng new project or stack blitz. When you need to create your angular components, services, etc.,  work out of this folder
