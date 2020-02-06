@@ -15,13 +15,6 @@ namespace capstone.Controllers
     [Route("[controller]")]
     public class StudentController : ControllerBase
     {
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public StudentController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
         public IEnumerable<Student> Get()
         {

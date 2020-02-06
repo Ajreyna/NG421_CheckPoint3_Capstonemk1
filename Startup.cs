@@ -11,6 +11,7 @@ using capstone.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace capstone
 {
@@ -88,7 +89,7 @@ namespace capstone
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
                 spa.Options.SourcePath = "ClientApp";
-
+                spa.Options.StartupTimeout = TimeSpan.FromSeconds(200);
                 if (env.IsDevelopment())
                 {
                     spa.UseAngularCliServer(npmScript: "start");
