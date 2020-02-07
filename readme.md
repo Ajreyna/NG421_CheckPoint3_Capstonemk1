@@ -24,5 +24,6 @@ We can use this project as the foundation for our capstone. We will build off of
 We are used to working on an Angular app that is based on the root level. In this project, because its both client and server, the Angular things are in the ClientApp folder. In this folder is the same folder structure we are used to from using a typical ng new project or stack blitz. When you need to create your angular components, services, etc.,  work out of this folder
 
 ## Deploy
-* Make sure to add the application setting `WEBSITE_LOAD_CERTIFICATES`
+* Remember to upload the certificate `capstone.pfx`
 * The certificate password is `capstone`
+* Make sure to add the application setting `WEBSITE_LOAD_CERTIFICATES` with the value of the certificate thumbprint
